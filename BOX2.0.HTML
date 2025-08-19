@@ -172,11 +172,11 @@
     </div>
   </nav>
   <script>
-  /* ======== CONFIG ======== */
-  const SUPABASE_URL  = 'https://YOUR-PROJECT.supabase.co';        // ← להחליף
-  const SUPABASE_ANON = 'eyJhbGciOi...';                            // ← להחליף
-  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
-  const USE_RLS_DB = true;
+/* ========= Supabase ========= */
+const SUPABASE_URL  = 'https://rgplfahccsclbdfqavcp.supabase.co';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJncGxmYWhjY3NjbGJkZnFhdmNwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2NDE4OTUsImV4cCI6MjA3MTIxNzg5NX0.9ovaTdibz1alS4HUMO-iaz_p7w-_slEesV7FWajrv4A';
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+
 
   /* ======== STATE + UTILS ======== */
   const ILS = new Intl.NumberFormat('he-IL',{ style:'currency', currency:'ILS', minimumFractionDigits:0, maximumFractionDigits:0 });
@@ -410,3 +410,4 @@
 </html>
 all([
       sb.from('categories').se
+
